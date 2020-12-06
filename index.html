@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/favicon-16x16.png">
+    <link rel="manifest" href="dist/site.webmanifest">
+    <title>Coupon Manager - developed by @oriziv</title>
+    <link rel="preconnect" href="https://www.mysodexo.co.il" />
+    <meta name="referrer" content="no-referrer" />
+    
+  </head>
+  <body dir="rtl" style="display: none">
+    <div class="app">
+      <nav class="navbar navbar-light bg-light" dir="rtl">
+        <a class="navbar-brand mr-0" href="#">שוברים סיבוס</a>
+        <div>
+            <a id="whatsappLink" href="whatsapp://send?text=">
+                <svg id="whatsapp" xmlns="http://www.w3.org/2000/svg" width="1.7rem" height="1.7rem" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z"/></svg>
+            </a>
+          <svg
+            data-toggle="modal"
+            data-target="#helpModal"
+            width="1.7rem"
+            height="1.7rem"
+            viewBox="0 0 16 16"
+            class="bi bi-info-circle"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+            />
+            <path
+              d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"
+            />
+            <circle cx="8" cy="4.5" r="1" />
+          </svg>
+          <a href="https://github.com/oriziv/cibus-shufersal-coupons">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.7rem"
+              height="1.7rem"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
+            </svg>
+          </a>
+        </div>
+      </nav>
+
+      <ul
+        class="nav nav-tabs nav-fill justify-content-center"
+        id="myTab"
+        role="tablist"
+        dir="ltr"
+      >
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link pr-3 pl-3 disabled"
+            id="print-tab"
+            data-toggle="tab"
+            href="#printTab"
+            role="tab"
+            aria-controls="print"
+            aria-selected="false"
+            >ברקוד</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link pr-3 pl-3"
+            id="coupons-tab"
+            data-toggle="tab"
+            href="#coupons"
+            role="tab"
+            aria-controls="coupons"
+            aria-selected="false"
+            >הקופונים שלי</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link pr-3 pl-3 active"
+            id="home-tab"
+            data-toggle="tab"
+            href="#home"
+            role="tab"
+            aria-controls="home"
+            aria-selected="true"
+            >ראשי</a
+          >
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="home"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+        >
+          <div class="container">
+            <div class="row" id="textForm">
+              <div class="col">
+                <div class="row">
+                  <div class="col">
+                    <h6 class="pt-3 pb-3">
+                      הדבק כאן את ההודעה שקיבלת משופרסל
+                      <br /><small>(אפשר להדביק כמה הודעות ברצף, או לייבא מ WhatsApp)</small>
+                    </h6>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group">
+                      <textarea
+                        name="cibusMessage"
+                        id="text"
+                        rows="7"
+                        dir="rtl"
+                      ></textarea>
+                      <div
+                        class="alert alert-success pt-1 pb-1"
+                        role="alert"
+                        id="cAlert"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="form-group" style="text-align: center">
+                  <button
+                    type="button"
+                    id="couponsCheckButton"
+                    class="btn btn-primary"
+                  >
+                    בדיקה
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="coupons"
+          role="tabpanel"
+          aria-labelledby="coupons-tab"
+        >
+          <div class="container">
+            <div class="row" id="noCoupons">
+              <div class="col">
+                <p class="pt-3 pb-3">לא נוספו עדיין קופונים</p>
+              </div>
+            </div>
+            <div class="row" id="totalWorth">
+              <div class="col">
+                <h5 class="pt-3 pb-0 mb-0"></h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col pb-3 pr-0 pl-0">
+                <ul class="list-group mt-4" id="myCouponsList"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="printTab"
+          role="tabpanel"
+          aria-labelledby="print-tab"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <p class="pt-3 pb-3 mb-0">
+                  <button
+                    type="button"
+                    id="printButton"
+                    class="btn btn-primary"
+                  >
+                    הדפסה
+                  </button>
+                  <a
+                    href="#"
+                    id="exportButton"
+                    class="btn btn-primary"
+                  >
+                    יצוא ל WhatsApp
+                </a>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col" id="print"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="helpModal"
+      tabindex="-1"
+      aria-labelledby="helpModalLabel"
+      aria-hidden="true"
+      dir="ltr"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="helpModalLabel">עזרה</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="text-align: right" dir="rtl">
+            <h6>אודות האפליקציה</h6>
+            <p>
+              האפליקציה פותחה ע"מ להקל את התהליך בשימוש בקופונים לרשתות מזון
+              שהונפקו ע"י סיבוס
+            </p>
+            <h6>דוגמה לשימוש</h6>
+            <p>
+              הדבק את ההודעה שקיבלת בעת רכישת הקופון, לדוגמא:<br/>
+              לצפיה בשובר שופרסל בסך ₪100:
+              https://www.mysodexo.co.il/b?eLZI1jF35avIJjASp לא ניתן לבטל את
+              השובר או לקבל ממנו עודף. למוצרי מזון וללא אלכוהול. יש להציג את
+              השובר בעת התשלום בקופה בסניף. בקניה באתר/באפליקציית שופרסל אונליין
+              ניתן לממש קופון אחד בלבד לעסקה. תוקף 31/12/2019
+            </p>
+            <h6>רשימת פיצ'רים</h6>
+            <p>
+                <ol>
+                    <li>זיהוי קופונים דרך הודעות</li>
+                    <li>ניהול קופונים ושמירתם במכשיר (שום מידע לא יוצא החוצה)</li>
+                    <li>הדפסת כל הקופונים שלא נוצלו בצורה נוחה</li>
+                    <li>שליחת קופונים שלא נוצלו ב WhatsApp</li>
+                    <li>יצוא נתונים ל WhatsApp</li>
+                    <li>יבוא נתונים מ WhatsApp</li>
+                    <li>תמיכה בשוברים של ויקטורי, שופרסל, ו BE</li>
+                </ol>
+            </p>
+            <p>Developed by @oriziv</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              סגור
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"
+  ></script>
+  <script async src="dist/main.js"></script>
+</html>

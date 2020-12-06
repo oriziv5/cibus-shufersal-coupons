@@ -1,0 +1,15 @@
+export const body = $<HTMLBodyElement>("body");
+export const printButton = $<HTMLButtonElement>("#printButton");
+export const exportButton = $<HTMLAnchorElement>("#exportButton");
+export const textForm = $<HTMLButtonElement>("#textForm");
+export const textArea = $<HTMLTextAreaElement>("textarea");
+export const printContainer = $<HTMLButtonElement>("#print");
+export const printTab = $<HTMLButtonElement>("#print-tab");
+export const homeTab = $<HTMLButtonElement>("#home-tab");
+export const myCouponsTab = $<HTMLButtonElement>("#coupons-tab");
+export const myCouponsContainer = $<HTMLDivElement>("#myCouponsList");
+export const noCoupons = $<HTMLDivElement>("#noCoupons");
+export const totalWorth = $<HTMLHeadingElement>("#totalWorth h5");
+export const couponsCheckButton = $<HTMLButtonElement>("#couponsCheckButton");
+export const couponsAlert = $<HTMLDivElement>("#cAlert");
+export const whatsAppLink = $<HTMLDivElement>("#whatsappLink");
