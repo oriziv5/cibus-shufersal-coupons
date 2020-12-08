@@ -71,16 +71,18 @@ p {
   text-align: right;
 }
 .barcode {
+  font-family: monospace;
   .c-id {
     text-align: center;
   }
   width: fit-content;
   margin: 1rem auto;
   img {
-    height: 150px;
-    width: 336px;
+    height: 50px;
+    width: 143px;
     display: block;
     image-rendering: pixelated;
+    margin: 1rem auto;
   }
 }
 .coupon-id {
@@ -131,6 +133,10 @@ p {
   }
   .barcode {
     margin-bottom: 2.4rem;
+    img {
+      height: 150px;
+      width: 336px;
+    }
   }
   body {
     background-color: var(--white);
