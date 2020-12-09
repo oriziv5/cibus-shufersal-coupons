@@ -15,11 +15,14 @@ It is 100% client side (Nothing is sent outside of your client ) to make sure pr
 
 - [x] Import & Export from/to WhatsApp
 
+- [x] Support "Be" and "Victory" Coupons
+
+- [x] Mobile & Desktop support
+
 - [ ] Scan coupons from mobile (TBD)
 
 - [ ] Search coupons to see if used before.
 
-- [x] Support "Be" and "Victory" Coupons
 
 - [ ] Support offline mode (PWA)
 
