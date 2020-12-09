@@ -35,3 +35,7 @@ It is 100% client side (Nothing is sent outside of your client ) to make sure pr
 ## Hosted version
 
 https://cutt.ly/coupons
+
+This app is deployed with Azure Static Websites
+
+Feel free to use it, or deploy your own version.
