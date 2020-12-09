@@ -32,6 +32,10 @@ It is 100% client side (Nothing is sent outside of your client ) to make sure pr
 
 `npm start`
 
+## Build project
+
+`npm run build`
+
 ## Hosted version
 
 https://cutt.ly/coupons
