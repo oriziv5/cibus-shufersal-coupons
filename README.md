@@ -34,4 +34,4 @@ It is 100% client side (Nothing is sent outside of your client ) to make sure pr
 
 ## Hosted version
 
-https://thankful-stone-0e0ea8703.azurestaticapps.net/
+https://cutt.ly/coupons
