@@ -13,7 +13,10 @@
       "type": "image/png"
     }
   ],
+  "dir": "rtl",
+  "lang": "he",
+  "description":"Manage and scan Cibus (Sodexo) Coupons",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
-  "display": "standalone"
+  "display": "fullscreen"
 }
