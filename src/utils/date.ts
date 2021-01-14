@@ -19,5 +19,5 @@ export function getIsraelDateFormat(date: Date): string {
 export function getIsraelTimeFormat(date: Date): string {
     const hour = date.getHours();
     const minutes = date.getMinutes();
-    return `${hour}:${minutes}`;
+    return `${hour<10?'0'+hour:hour}:${minutes<10?'0'+minutes: minutes}`;
 }
