@@ -19,10 +19,9 @@ It is 100% client side (Nothing is sent outside of your client ) to make sure pr
 
 - [x] Mobile & Desktop support
 
-- [ ] Scan coupons from mobile (TBD)
+- [x] Scan coupons from mobile (not supported at all stores)
 
 - [ ] Search coupons to see if used before.
-
 
 - [ ] Support offline mode (PWA)
 
@@ -34,6 +33,8 @@ It is 100% client side (Nothing is sent outside of your client ) to make sure pr
 `npm install`
 
 `npm start`
+
+Just open the `index.html` file (no server needed!)
 
 ## Build project
 
