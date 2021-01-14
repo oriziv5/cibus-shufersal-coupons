@@ -43,6 +43,7 @@ body {
   background: var(--white) !important;
 }
 nav {
+  background: white;
   border-radius: 4px 4px 0px 0;
   border-bottom: 1px solid $main-color;
 }
@@ -60,9 +61,15 @@ textarea {
   font-size: 0.8rem;
   padding: 10px;
 }
-
+#myTab {
+  background: white;
+}
 ul {
   padding: 0;
+  background: white;
+  &.nav-tabs {
+    background: white;
+  }
 }
 .col {
   text-align: right;
