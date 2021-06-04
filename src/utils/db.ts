@@ -44,7 +44,8 @@ export class UserStorage {
     }
 
     getAll() {
-        return this.data.sort((a, b)=> {return a.used ? 1: -1});
+        return this.data;
+        // .sort((a, b)=> {return a.used ? 1: -1});
     }
 
     updateState(id: string, state: boolean) {
