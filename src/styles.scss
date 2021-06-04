@@ -2,6 +2,8 @@
 @import "~bootstrap/scss/bootstrap";
 
 $main-color: #d31242;
+$barcode-width: 143px;
+$barcode-height: 50px; 
 
 .app {
   max-width: 600px;
@@ -83,10 +85,11 @@ p {
     text-align: center;
   }
   width: fit-content;
-  margin: 2rem auto;
+  margin: 9rem auto;
+  
   img {
-    height: 50px;
-    width: 143px;
+    height: $barcode-height * 2;
+    width: $barcode-width * 2;
     display: block;
     image-rendering: pixelated;
     margin: 1rem auto;

@@ -18,7 +18,6 @@
     "url": "https://github.com/oriziv/cibus-shufersal-coupons/issues"
   },
   "homepage": "https://github.com/oriziv/cibus-shufersal-coupons#readme",
-  "dependencies": {},
   "devDependencies": {
     "@types/jquery": "^3.5.4",
     "bootstrap": "^4.5.3",
