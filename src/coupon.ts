@@ -31,7 +31,7 @@ export class Coupon implements ICoupon {
 
     async getId() {
         try {
-              const resp = await fetch(`${config.baseUrl}/b/?${this.hash}`);
+              const resp = await fetch(`${config.baseUrl}/b/?${this.hash}`, {mode: 'no-cors'});
               const text = await resp.text();
               this.id = text.match(cidRegex)?.[0] as string;
           } catch (error) {
