@@ -138,7 +138,7 @@ async function getCoupons() {
         const id = messageDetails[1];
         const price = Number(messageDetails?.[2].replace(NIS, ""));
         const expire = messageDetails?.[3];
-        const link = `${config.baseUrl}/b?${messageDetails?.[4]}`;
+        const link = `${config.baseUrl}/b/bar.ashx?${messageDetails?.[4]}`;
         const used = messageDetails[5] === 'true' ? true : false;
         const coupon = coupons.find((c) => c.link === link);
 
