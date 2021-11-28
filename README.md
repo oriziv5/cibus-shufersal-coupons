@@ -42,7 +42,7 @@ Just open the `index.html` file (no server needed!)
 
 ## Hosted version
 
-https://cutt.ly/coupons
+https://cutt.ly/cibuscoupons
 
 This app is deployed with Azure Static Websites
 
